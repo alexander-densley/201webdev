@@ -1,0 +1,159 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #cdd2d8;
+}
+
+ul.navul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li.navli {
+	float: left;
+	font-size: 20px;
+}
+
+li.navli a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.navli a:hover {
+	background-color: #111;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
+}
+
+.anchors a {
+	text-decoration: none;
+	font-size: 0.5em;
+	color: rgb(47, 47, 74);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.content h1 {
+	font-size: 3em;
+}
+
+.youtube {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.you-child {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+.you-col {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+
+	align-items: center;
+	flex-basis: 90%;
+	padding: 20px;
+}
+.you-col h1 {
+	font-size: 2em;
+}
+.you-col p {
+	padding-top: 10px;
+	font-size: 1.2em;
+	align-self: flex-start;
+	justify-content: left;
+}
+.you-col ol {
+	padding-top: 10px;
+	margin-left: 40px;
+	font-size: 1.2em;
+	align-self: flex-start;
+	justify-content: left;
+}
+#you {
+	margin-bottom: 10px;
+}
+
+.tableau {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+	width: 90%;
+}
+
+#tab {
+	margin-bottom: 10px;
+}
+
+#slideshow {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+	overflow: hidden;
+	height: 600px;
+	width: 728px;
+	margin: 0 auto;
+}
+
+.slide {
+	float: left;
+	width: 728px;
+}
+
+.slide-wrapper {
+	padding-top: 20px;
+	width: calc(728px * 4);
+	animation: slide 10s ease infinite;
+}
+
+@keyframes slide {
+	20% {
+		margin-left: 0px;
+	}
+
+	40% {
+		margin-left: calc(-728px * 1);
+	}
+
+	60% {
+		margin-left: calc(-728px * 2);
+	}
+
+	80% {
+		margin-left: calc(-728px * 3);
+	}
+}
